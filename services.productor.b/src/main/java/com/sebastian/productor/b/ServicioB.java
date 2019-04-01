@@ -7,10 +7,10 @@ import com.sebastian.servicios.port.Servicio;
  *
  * @author Sebastián Ávila A.
  */
-public class ServicioB implements Servicio {
+public final class ServicioB {
+  private ServicioB() {}
 
-  @Override
-  public String identificar() {
-    return "Hola desde el Servicio B";
+  public static Servicio provider() {
+    return () -> "Hola desde el Servicio B";
   }
 }
