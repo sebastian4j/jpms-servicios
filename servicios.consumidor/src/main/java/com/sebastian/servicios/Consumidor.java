@@ -14,12 +14,12 @@ import com.sebastian.servicios.port.Servicio;
  *
  * lanzar:
  *
- * java --module-path mods --module services.consumidor/com.sebastian.servicios.Consumidor
+ * java --module-path mods --module servicios.consumidor/com.sebastian.servicios.Consumidor
  *
  * lanzar y ver la resolucion de modulos:
  *
  * java --show-module-resolution --module-path mods --module
- * services.consumidor/com.sebastian.servicios.Consumidor
+ * servicios.consumidor/com.sebastian.servicios.Consumidor
  *
  *
  * @author Sebastián Ávila A.
@@ -30,3 +30,4 @@ public class Consumidor {
         .forEach(s -> System.out.println(s.identificar()));
   }
 }
+

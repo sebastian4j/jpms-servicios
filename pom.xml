@@ -15,9 +15,9 @@
 		<copied.libs.dir>${project.build.directory}/${libs.classpath.prefix}</copied.libs.dir>
 	</properties>
 	<modules>
-		<module>services.productor.a</module>
-		<module>services.productor.b</module>
-		<module>services.consumidor</module>
+		<module>servicios.productor.a</module>
+		<module>servicios.productor.b</module>
+		<module>servicios.consumidor</module>
 	</modules>
 	<build>
 		<finalName>${project.artifactId}</finalName>
