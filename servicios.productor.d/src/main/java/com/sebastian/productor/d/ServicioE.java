@@ -1,6 +1,5 @@
 package com.sebastian.productor.d;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import com.sebastian.servicios.port.Servicio;
 
 /**
@@ -16,12 +15,11 @@ import com.sebastian.servicios.port.Servicio;
  *
  * @author Sebastián Ávila A.
  */
-public final class ServicioD implements Servicio {
-  private final AtomicInteger ai = new AtomicInteger();
+public final class ServicioE implements Servicio {
 
   @Override
   public String identificar() {
-    return "hola desde el servicio D " + ai.incrementAndGet() + " " + this;
+    return "hola desde el servicio E";
   }
 
 }

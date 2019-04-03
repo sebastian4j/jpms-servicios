@@ -28,12 +28,6 @@ public class Consumidor {
   public static void main(String[] args) {
     ServiceLoader.load(Servicio.class).stream().map(Provider::get).collect(Collectors.toList())
         .forEach(s -> System.out.println(s.identificar()));
-    ServiceLoader.load(Servicio.class).stream().map(Provider::get).collect(Collectors.toList())
-        .forEach(s -> System.out.println(s.identificar()));
-    ServiceLoader.load(Servicio.class).stream().map(Provider::get).collect(Collectors.toList())
-        .forEach(s -> System.out.println(s.identificar()));
-    ServiceLoader.load(Servicio.class).stream().map(Provider::get).collect(Collectors.toList())
-        .forEach(s -> System.out.println(s.identificar()));
   }
 }
 
