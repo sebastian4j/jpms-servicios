@@ -17,6 +17,8 @@
 	<modules>
 		<module>servicios.productor.a</module>
 		<module>servicios.productor.b</module>
+		<module>servicios.productor.c</module>
+		<module>servicios.productor.d</module>
 		<module>servicios.consumidor</module>
 	</modules>
 	<build>

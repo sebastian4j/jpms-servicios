@@ -6,3 +6,4 @@ module servicios.productor.b {
 
   provides com.sebastian.servicios.port.Servicio with com.sebastian.productor.b.ServicioB;
 }
+
