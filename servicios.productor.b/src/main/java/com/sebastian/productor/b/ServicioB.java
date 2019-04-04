@@ -11,6 +11,6 @@ public final class ServicioB {
   private ServicioB() {}
 
   public static Servicio provider() {
-    return () -> "Hola desde el Servicio B ";
+    return new SB();
   }
 }

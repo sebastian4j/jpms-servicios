@@ -26,8 +26,28 @@ import com.sebastian.servicios.port.Servicio;
  */
 public class Consumidor {
   public static void main(String[] args) {
+
     ServiceLoader.load(Servicio.class).stream().map(Provider::get).collect(Collectors.toList())
         .forEach(s -> System.out.println(s.identificar()));
+
+    // obtienen las mismas referencias
+    final var sl = ServiceLoader.load(Servicio.class);
+
+    sl.forEach(System.out::println);
+    System.out.println(":::::::::::::::");
+    sl.forEach(System.out::println);
+    System.out.println(":::::::::::::::");
+    var it = sl.iterator();
+    while (it.hasNext()) {
+      System.out.println(it.next());
+    }
+    System.out.println(":::::::::::::::");
+    // renueva las referencias
+    sl.reload();
+    it = sl.iterator();
+    while (it.hasNext()) {
+      System.out.println(it.next());
+    }
   }
 }
 

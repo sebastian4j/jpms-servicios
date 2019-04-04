@@ -9,10 +9,10 @@ import com.sebastian.servicios.port.Servicio;
  * @author Sebastián Ávila A.
  */
 public class ServicioA implements Servicio {
-  private final AtomicInteger AI = new AtomicInteger();
+  private final AtomicInteger ai = new AtomicInteger();
 
   @Override
   public String identificar() {
-    return "Hola desde el Servicio A " + AI.incrementAndGet() + " " + this;
+    return "Hola desde el Servicio A " + ai.incrementAndGet();
   }
 }
